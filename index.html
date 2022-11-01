@@ -593,6 +593,23 @@ body{background:#15141B}body #terminal{color:#edecee}body #user{color:#61ffca}bo
     
     
 
+		
+
+		
+		
+
+		
+    
+        
+        
+            
+            
+        
+    
+    
+
+		
+
     
     
     
@@ -642,12 +659,14 @@ body{background:#15141B}body #terminal{color:#edecee}body #user{color:#61ffca}bo
     
     
 
-    <span id="ps1_01"></span> <span id="cd"></span> <br>
-<span id="ps1_02"></span> <span id="cat"></span> <br>
+		<span id="ps1_01"></span> <span id="cd"></span> <br>
+<span id="ps1_02"></span> <span id="whoami"></span> <br>
 <span id="std_out_01"></span> <br>
-<span id="ps1_03"></span> <span id="tree"></span> <br>
-<span id="std_out_02"></span> <br>
-<span id="ps1_04"></span>
+<span id="ps1_03"></span> <span id="ls"></span> <br>
+<span id="std_out_02"></span>
+<span id="ps1_04"></span> <span id="tree"></span> <br>
+<span id="std_out_03"></span> <br><br>
+<span id="ps1_05"></span>
 
 <script type="text/javascript">
     async function typewriter(text, elementId, waitAfter) {
@@ -698,17 +717,18 @@ body{background:#15141B}body #terminal{color:#edecee}body #user{color:#61ffca}bo
         commandDelay = parseDelay("50");
     const typeeffetct = async () => {
         await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003ehcirne@web\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_01", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003ecd portfolio\u003c\/span\u003e", "cd", commandDelay);
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003ehcirne@web\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/portfolio\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_02", ps1Delay); await typewriter("\u003cspan id=terminal\u003ewhoami\u003c\/span\u003e", "cat", commandDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003ehcirne@web\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/portfolio\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_02", ps1Delay); await typewriter("\u003cspan id=terminal\u003ewhoami\u003c\/span\u003e", "whoami", commandDelay);
         await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cbr\u003e\tHello, world!\u003cbr\u003e\tMy name is Henrique.\u003cbr\u003e\tI\u0027m a network and cybersecurity student!\u003cbr\u003e\n  \u003c\/span\u003e", "std_out_01", stdoutDelay);
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003ehcirne@web\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/portfolio\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_03", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003etree .\/my_links\/\u003c\/span\u003e", "tree", commandDelay);
-        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cstrong\u003e\u003cspan id=\u0027dir\u0027\u003e.\/my_links\/\u003c\/span\u003e\u003c\/strong\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/www.example.com\/\u0027\u003eGitHub\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/www.example.com\/\u0027\u003eLinkedin\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e└── \u003ca href=\u0027mailto:mail@henriquecirne.com\u0027\u003eLet\u0027s talk\u003c\/a\u003e\u003c\/span\u003e", "std_out_02", stdoutDelay);
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003ehcirne@web\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/portfolio\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_04", ps1Delay);
+				await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003ehcirne@web\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/portfolio\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_03", ps1Delay); await typewriter("\u003cspan id=terminal\u003els .\/projects\/\u003c\/span\u003e", "ls", commandDelay);
+				await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cbr\u003e\n\u003ca href=\u0022projects\/lab1\u0022\u003eLab1\u003c\/a\u003e\n\u003ca href=\u0022projects\/lab2\u0022\u003eLab2\u003c\/a\u003e\n\u003ca href=\u0022projects\/lab3\u0022\u003eLab3\u003c\/a\u003e\u003c\/p\u003e\n\u003c\/span\u003e", "std_out_02", stdoutDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003ehcirne@web\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/portfolio\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_04", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003etree .\/my_links\/\u003c\/span\u003e", "tree", commandDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cstrong\u003e\u003cspan id=\u0027dir\u0027\u003e.\/my_links\/\u003c\/span\u003e\u003c\/strong\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/www.example.com\/\u0027\u003eGitHub\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/www.example.com\/\u0027\u003eLinkedin\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e└── \u003ca href=\u0027mailto:mail@henriquecirne.com\u0027\u003eLet\u0027s talk\u003c\/a\u003e\u003c\/span\u003e", "std_out_03", stdoutDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003ehcirne@web\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/portfolio\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_05", ps1Delay);
         return;
     }
 
     typeeffetct()
 </script>
-
 
 
         </div>

@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Henrique Cirne Portfolio</title>
-    <link>https://hcirne.github.io/</link>
-    <description>Recent content on Henrique Cirne Portfolio</description>
+    <title>Projects on Henrique Cirne Portfolio</title>
+    <link>https://hcirne.github.io/projects/</link>
+    <description>Recent content in Projects on Henrique Cirne Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://hcirne.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://hcirne.github.io/content/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://hcirne.github.io/content/</guid>
-      <description>Lab1 Lab2 Lab3</description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://hcirne.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lab1</title>
       <link>https://hcirne.github.io/projects/lab1/</link>
